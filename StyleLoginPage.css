@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popping, sans-seif';
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('Tropical-night.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    position: relative;
+    max-width: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(5px); /* Adjust the blur value as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.inputBox {
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom: 2px solid white;
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out; /* Apply transition to .label */
+}
+
+input:focus ~ .label, /* Use the correct selector here */
+input:not(:placeholder-shown) ~ .label { /* Add this selector to handle cases where the input is not empty */
+    top: -5px;
+}
+
+.inputBox input{
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    margin-top: 20px;
+  }
+  
+input[type="submit"]:hover {
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+div a {
+    font-size: 0.9rem;
+    color: white;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* a {
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    margin: 20px 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+} */
+
+
