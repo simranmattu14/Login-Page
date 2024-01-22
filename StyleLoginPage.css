@@ -42,7 +42,7 @@ h2 {
     border-bottom: 2px solid white;
 }
 
-label {
+.inputBox label {
     position: absolute;
     top: 50%;
     left: 5px;
@@ -51,6 +51,12 @@ label {
     font-size: 1rem;
     pointer-events: none;
     transition: all 0.5s ease-in-out; /* Apply transition to .label */
+}
+
+.inputBox ion-icon {
+    position: absolute;
+    left: 175px;
+    font-size: 1.2rem;
 }
 
 input:focus ~ .label, /* Use the correct selector here */
@@ -86,15 +92,54 @@ input[type="submit"]:hover {
     background-color: rgb(255, 255, 255, 0.5);
 }
 
-div a {
-    font-size: 0.9rem;
+
+.forget {
+    font-size: 0.85rem;
+    margin: 3px 0;
     color: white;
+    justify-content: space-between;
+    display: flex;
 }
 
-.links {
+.forget a {
+    color: white;
+    font-size: 0.95rem;
+}
+
+.register a {
+    color: white;
+    font-size: 0.95rem;
+}
+
+.register {
+    text-align: center;
+}
+  
+.register label {
+    margin-top: 10px;
+    color: white;
+    font-size: 0.8rem;
+    justify-content: center;
+    margin-right: 10px; 
+}
+
+  
+
+/* div a {
+    font-size: 0.9rem;
+    color: white;
+} */
+
+
+
+/* .Remember {
+    margin: 35px 0;
+    font-size: 0.85rem;
+    color: white;
     display: flex;
     justify-content: space-between;
-}
+} */
+
 
 /* a {
     font-size: 0.9rem;
